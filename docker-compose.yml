@@ -1,0 +1,30 @@
+name: study-infrastructure
+
+services:
+  sqlserver:
+    container_name: ${SQLSERVER_CONTAINER_NAME}
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    
+    ports:
+      - "${SQLSERVER_PORT}:1433"
+    
+    environment:
+      SA_PASSWORD: ${SQLSERVER_SA_PASSWORD}
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "${SQLSERVER_SA_PASSWORD}", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    
+    restart: unless-stopped
+
+volumes:
+  sqlserver-data:
+    name: ${SQLSERVER_CONTAINER_NAME}-data

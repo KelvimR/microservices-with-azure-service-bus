@@ -1,0 +1,78 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: 
+      - main 
+      - develop 
+  pull_request:
+    branches: 
+      - main
+      - develop
+
+permissions:
+  contents: read        
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}  
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build and Test - ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+      
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+            - project: Mango
+              solution: Mango/Mango.slnx
+
+            - project: SampleAPI
+              solution: SampleAPI/SampleAPI.slnx
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+          cache: true
+          cache-dependency-path: ${{ matrix.project }}/**/*.packages.lock.json
+
+      - name: Display .NET information
+        run: dotnet --info
+      
+      - name: Restore dependencies
+        run: dotnet restore ${{ matrix.solution }}
+
+      - name: Build solution
+        run: >
+            dotnet build ${{ matrix.solution }} 
+            --configuration Release 
+            --no-restore
+            --nologo
+            --warnaserror
+
+      - name: Run tests
+        run: >
+            dotnet test ${{ matrix.solution }} 
+            --configuration Release 
+            --no-build
+            --no-restore
+            --nologo
+            --logger "trx"
+            --results-directory ${{ github.workspace }}/test-results/${{ matrix.project }}
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.project }}
+          path: TestResults/${{ matrix.project }}
+          if-no-files-found: ignore
+          retention-days: 7
