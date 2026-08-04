@@ -9,7 +9,7 @@ services:
       - "${SQLSERVER_PORT}:1433"
     
     environment:
-      SA_PASSWORD: ${SQLSERVER_SA_PASSWORD}
+      MSSQL_SA_PASSWORD: ${SQLSERVER_SA_PASSWORD}
       ACCEPT_EULA: "Y"
       MSSQL_PID: "Developer"
 

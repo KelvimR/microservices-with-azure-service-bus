@@ -42,6 +42,9 @@ ScaffoldingReadMe.txt
 .env.production
 .env.integration
 
+# Local development settings
+**/appsettings.Development.json
+
 # Others
 ~$*
 *~
