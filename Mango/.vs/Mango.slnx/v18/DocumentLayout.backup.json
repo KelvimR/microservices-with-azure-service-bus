@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|c:\\temp\\microservices-with-azure-service-bus\\mango\\mango.services.couponapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|solutionrelative:mango.services.couponapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T14:01:03.549Z",
+              "EditorCaption": ""
             }
           ]
         }
