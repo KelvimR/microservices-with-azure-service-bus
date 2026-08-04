@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|c:\\temp\\microservices-with-azure-service-bus\\mango\\mango.services.couponapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|solutionrelative:mango.services.couponapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Migrations\\20260804180613_SeedCouponTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mango.Services.CouponAPI\\Migrations\\20260804180613_SeedCouponTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|c:\\temp\\microservices-with-azure-service-bus\\mango\\mango.services.couponapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|solutionrelative:mango.services.couponapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|c:\\temp\\microservices-with-azure-service-bus\\mango\\mango.services.couponapi\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99FBD3B1-E000-4087-9D54-64719D01700B}|Mango.Services.CouponAPI\\Mango.Services.CouponAPI.csproj|solutionrelative:mango.services.couponapi\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,40 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Mango.Services.CouponAPI\\Program.cs",
-              "ToolTip": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Program.cs",
-              "RelativeToolTip": "Mango.Services.CouponAPI\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBoAAAAAAAAAAAAAAA==",
+              "Title": "CouponController.cs",
+              "DocumentMoniker": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Controllers\\CouponController.cs",
+              "RelativeDocumentMoniker": "Mango.Services.CouponAPI\\Controllers\\CouponController.cs",
+              "ToolTip": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Controllers\\CouponController.cs",
+              "RelativeToolTip": "Mango.Services.CouponAPI\\Controllers\\CouponController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwCIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T18:08:14.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20260804180613_SeedCouponTables.cs",
-              "DocumentMoniker": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Migrations\\20260804180613_SeedCouponTables.cs",
-              "RelativeDocumentMoniker": "Mango.Services.CouponAPI\\Migrations\\20260804180613_SeedCouponTables.cs",
-              "ToolTip": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Migrations\\20260804180613_SeedCouponTables.cs",
-              "RelativeToolTip": "Mango.Services.CouponAPI\\Migrations\\20260804180613_SeedCouponTables.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T18:06:13.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\TEMP\\microservices-with-azure-service-bus\\Mango\\Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Mango.Services.CouponAPI\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAwwA8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T18:02:20.378Z",
+              "WhenOpened": "2026-08-04T18:24:42.392Z",
               "EditorCaption": ""
             }
           ]
