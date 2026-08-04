@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Dependency Review
-        uses: github/dependency-review-action@v4  
+        uses: actions/dependency-review-action@v4  
         with:
             fail-on-severity: high #faz o workflow falhar somente quando uma nova dependência introduz vulnerabilidade
             fail-on-scope: runtime #faz a action bloquear vulnerabilidades em dependências utilizadas durante a execução da aplicação.
